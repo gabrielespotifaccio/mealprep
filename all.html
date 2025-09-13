@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Prep – RESET</title>
+  <style>
+    :root{--bg:#f8fafc;--card:#fff;--ink:#0f172a;--muted:#475569;--border:#e2e8f0;--acc:#2563eb}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{max-width:980px;margin:24px auto;padding:0 16px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    h1{font-size:1.8rem;margin:0}
+    nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+    nav a{padding:6px 10px;border-radius:8px;text-decoration:none;color:var(--muted)}
+    nav a:hover{background:#eef2f7;color:var(--ink)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin:16px 0}
+    .table{width:100%;border-collapse:collapse;font-size:.95rem}
+    .table th,.table td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+    .table th{background:#f1f5f9}
+    .btns{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
+    button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 12px;cursor:pointer}
+    button.secondary{background:#0ea5e9}
+    .list-plain{padding-left:18px;margin:0}
+    .list-plain li{margin:4px 0}
+    .muted{color:var(--muted)}
+    .hidden{display:none}
+    @media print{nav,.btns{display:none}.wrap{max-width:none}.card{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Meal Prep – Settimana tipo (≈2000 kcal/g)</h1>
+      <button onclick="window.print()">🖨️ Stampa</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#colazione">Colazione + Spuntini</a></li>
+        <li><a href="#piano">Tabella Pranzi & Cene</a></li>
+        <li><a href="#lista">Ingredienti (3+3 giorni)</a></li>
+        <li><a href="#processo">Processo ottimizzato</a></li>
+      </ul>
+    </nav>
+
+    <!-- 1) COLAZIONE + SPUNTINI -->
+    <section id="colazione" class="card">
+      <h2>🍳 Colazione + 🧺 Spuntini (uguali ogni giorno)</h2>
+      <ul class="list-plain">
+        <li>Fiocchi d’avena <strong>50 g</strong> + Yogurt bianco <strong>150 g</strong> + Frutta <strong>100 g</strong> + Frutta secca/semi <strong>10 g</strong></li>
+        <li>Spuntini: 1 frutto <strong>150 g</strong> + frutta secca/semi <strong>10 g</strong></li>
+      </ul>
+      <p class="muted">Economico, ricco di fibre e proteine. Mantieni l’olio a crudo (10 g) sui pasti principali.</p>
+    </section>
+
+    <!-- 2) TABELLA PASTI -->
+    <section id="piano" class="card">
+      <h2>📅 Tabella pranzi & cene</h2>
+      <table class="table">
+        <thead><tr><th>Giorno</th><th>Pranzo</th><th>Cena</th></tr></thead>
+        <tbody>
+          <tr><th>Lunedì</th><td>Riso basmati <strong>80 g</strong> + Pollo curry <strong>150 g</strong> + Zucchine <strong>150 g</strong> + Olio <strong>10 g</strong></td><td>Pasta integrale <strong>80 g</strong> + Lenticchie cotte <strong>100 g</strong> + Broccoli <strong>150 g</strong> + Olio <strong>10 g</strong></td></tr>
+          <tr><th>Martedì</th><td>Couscous <strong>80 g</strong> + Ceci <strong>100 g</strong> + Carote <strong>100 g</strong> + Peperoni <strong>100 g</strong> + Olio <strong>10 g</strong></td><td>Patate forno <strong>200 g</strong> + Pollo <strong>150 g</strong> + Spinaci <strong>150 g</strong> + Olio <strong>10 g</strong></td></tr>
+          <tr><th>Mercoledì</th><td>Insalata di riso: Riso <strong>80 g</strong> + Tonno <strong>80 g</strong> + Mais <strong>100 g</strong> + Lattuga <strong>100 g</strong> + Olio <strong>10 g</strong></td><td>Frittata (Uova <strong>2</strong> + Zucchine <strong>100 g</strong>) + Patate lesse <strong>150 g</strong> + Broccoli <strong>150 g</strong></td></tr>
+          <tr><th>Giovedì</th><td>Pasta integrale <strong>80 g</strong> + Pollo <strong>120 g</strong> + Spinaci <strong>150 g</strong> + Olio <strong>10 g</strong></td><td>Zuppa di legumi: Ceci <strong>100 g</strong> + Lenticchie <strong>100 g</strong> + Verdure <strong>200 g</strong> + Pane <strong>30 g</strong></td></tr>
+          <tr><th>Venerdì</th><td>Riso basmati <strong>80 g</strong> + Pollo forno <strong>150 g</strong> + Peperoni <strong>150 g</strong> + Olio <strong>10 g</strong></td><td>Pasta integrale <strong>80 g</strong> + Tonno <strong>80 g</strong> + Zucchine <strong>150 g</strong> + Olio <strong>10 g</strong></td></tr>
+          <tr><th>Sabato</th><td>Couscous <strong>80 g</strong> + Ceci <strong>100 g</strong> + Spinaci <strong>100 g</strong> + Carote <strong>100 g</strong> + Olio <strong>10 g</strong></td><td>Pollo forno <strong>150 g</strong> + Patate <strong>200 g</strong> + Broccoli <strong>150 g</strong> + Olio <strong>10 g</strong></td></tr>
+          <tr><th>Domenica</th><td>Pasta al pomodoro: Pasta <strong>80 g</strong> + Passata <strong>150 g</strong> + Ricotta <strong>20 g</strong> + Insalata <strong>100 g</strong> + Olio <strong>10 g</strong></td><td>Zuppa legumi: Ceci <strong>100 g</strong> + Lenticchie <strong>100 g</strong> + Verdure <strong>200 g</strong> + Pane <strong>30 g</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 3) LISTE 3+3 GIORNI -->
+    <section id="lista" class="card">
+      <h2>🛒 Ingredienti per meal prep (3+3 giorni)</h2>
+      <p class="muted">Include solo pranzi/cene + olio. Colazioni/spuntini sono fisse e <em>non</em> conteggiate qui.</p>
+      <div class="btns">
+        <button onclick="showList('first3')">Lun–Mar–Mer</button>
+        <button class="secondary" onclick="showList('next3')">Gio–Ven–Sab</button>
+        <button class="secondary" onclick="showList('all')">Settimana intera</button>
+      </div>
+      <div id="list-first3">
+        <h3>Primi 3 giorni (Lun–Mer)</h3>
+        <ul class="list-plain">
+          <li>Pollo 450 g (300 g neutro + 150 g curry)</li>
+          <li>Riso basmati crudo 160 g</li>
+          <li>Pasta integrale cruda 80 g</li>
+          <li>Couscous secco 80 g</li>
+          <li>Lenticchie cotte 100 g (≈50 g secche)</li>
+          <li>Ceci cotti 100 g (≈50 g secchi)</li>
+          <li>Patate 350 g (200 g forno + 150 g lesse)</li>
+          <li>Broccoli 300 g</li>
+          <li>Zucchine 250–300 g</li>
+          <li>Peperone 100 g, Carote 100 g</li>
+          <li>Spinaci 150 g</li>
+          <li>Tonno al naturale 80 g, Mais 100 g, Lattuga 100 g</li>
+          <li>Uova 2</li>
+          <li>Olio extravergine ~60 ml (per condimenti dei 3 giorni)</li>
+        </ul>
+      </div>
+      <div id="list-next3" class="hidden">
+        <h3>Giorni 4–6 (Gio–Sab)</h3>
+        <ul class="list-plain">
+          <li>Pollo 420 g (120 g padella + 300 g forno)</li>
+          <li>Riso basmati crudo 80 g</li>
+          <li>Pasta integrale cruda 160 g</li>
+          <li>Couscous secco 80 g</li>
+          <li>Lenticchie cotte 100 g (≈50 g secche)</li>
+          <li>Ceci cotti 100 g (≈50 g secchi)</li>
+          <li>Patate 200 g</li>
+          <li>Broccoli 150 g</li>
+          <li>Zucchine 150 g</li>
+          <li>Peperoni 150 g</li>
+          <li>Carote 100 g</li>
+          <li>Spinaci 250 g</li>
+          <li>Passata di pomodoro 150 g, Pane 30 g</li>
+          <li>Tonno 80 g</li>
+          <li>Olio extravergine ~60 ml</li>
+        </ul>
+      </div>
+      <div id="list-all" class="hidden">
+        <h3>Settimana intera</h3>
+        <ul class="list-plain">
+          <li>Pollo 870 g · Uova 12 · Tonno 160 g</li>
+          <li>Riso 240 g · Pasta 320 g · Couscous 160 g · Pane 30 g</li>
+          <li>Lenticchie secche 100 g · Ceci secchi 100 g</li>
+          <li>Patate 550 g · Broccoli 450 g · Zucchine 450–500 g · Peperoni 250 g · Carote 200 g · Spinaci 400 g · Lattuga 100 g · Mais 100 g · Passata 150 g</li>
+          <li>Olio extravergine ~120–150 ml per l’intera settimana</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4) PROCESSO OTTIMIZZATO -->
+    <section id="processo" class="card">
+      <h2>🥘 Processo ottimizzato di preparazione (batch 3 giorni)</h2>
+      <details open>
+        <summary>Batch Lun–Mar–Mer (~90–120 min)</summary>
+        <ol>
+          <li><strong>Forno 200 °C</strong> e due pentole d’acqua a bollire (riso/pasta; patate). Prepara teglia patate 200 g a cubetti (olio/sale/rosmarino).</li>
+          <li><strong>Padella A</strong> pollo: rosola 300 g a cubetti (sale/pepe) 8–10′ → tieni 150 g per Mar cena. Aggiungi altri 150 g con curry 5 g per Lun pranzo.</li>
+          <li><strong>Zucchine</strong> 250 g in Padella A 5–6′ (150 g per Lun pranzo, 100 g per Mer cena).</li>
+          <li><strong>Riso</strong> 160 g (12′). Metà resterà per Lun, metà raffredda per insalata Mer.</li>
+          <li><strong>Vapore</strong> broccoli 300 g (6–7′). <strong>Patate lesse</strong> 150 g (12′) in seconda pentola.</li>
+          <li><strong>Inforna</strong> patate 200 g (25′) per Mar cena. <strong>Spinaci</strong> 150 g saltati 3–4′.</li>
+          <li><strong>Lenticchie</strong> 100 g cotte (o 50 g secche, 25–30′) + <strong>Ceci</strong> 100 g (scaldati 5′). Idraulizza <strong>couscous</strong> 80 g (80 ml acqua bollente, 5′).</li>
+          <li><strong>Frittata</strong> (2 uova + 100 g zucchine) 8–10′.</li>
+          <li><strong>Insalata di riso</strong>: riso freddo + tonno 80 g + mais 100 g + lattuga 100 g + olio 10 g.</li>
+          <li><strong>Porziona ed etichetta</strong>: Lun P/C, Mar P/C, Mer P/C. Raffredda entro 90′ e frigo.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>Batch Gio–Ven–Sab (~90–120 min)</summary>
+        <ol>
+          <li><strong>Forno 200 °C</strong>. Pentola riso/pasta, pentola zuppa. Prepara teglia patate 200 g (per Sab cena).</li>
+          <li><strong>Pollo</strong> 420 g in 2 step: 300 g forno (porzioni Ven/Sab), 120 g padella con spinaci (Gio pranzo).</li>
+          <li><strong>Peperoni 150 g</strong> e <strong>Zucchine 150 g</strong> saltati (per Ven pranzo/cena). <strong>Broccoli 150 g</strong> a vapore (Sab cena).</li>
+          <li><strong>Riso 80 g</strong> (12′). <strong>Pasta 160 g</strong> (scola al dente, condisci olio). <strong>Couscous 80 g</strong> idratato.</li>
+          <li><strong>Zuppa</strong>: soffritto + ceci 100 g + lenticchie 100 g + verdure 200 g + acqua → sobbollire 30′.</li>
+          <li><strong>Spinaci 250 g</strong> in due salti: 150 g (Gio pranzo), 100 g (Sab pranzo) + <strong>Carote 100 g</strong>.</li>
+          <li><strong>Assemblaggio</strong>: Gio P/C, Ven P/C, Sab P/C. Congela la zuppa se oltre 3 giorni.</li>
+        </ol>
+      </details>
+    </section>
+  </div>
+
+  <script>
+    function showList(which){
+      const ids=['first3','next3','all'];
+      ids.forEach(id=>{
+        const el=document.getElementById('list-'+id);
+        if(!el) return;
+        if(id===which) el.classList.remove('hidden'); else el.classList.add('hidden');
+      })
+    }
+  </script>
+</body>
+</html>
